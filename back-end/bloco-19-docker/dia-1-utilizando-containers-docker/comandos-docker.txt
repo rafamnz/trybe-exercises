@@ -1,0 +1,23 @@
+1 - Buscar por imagem do Debian no Docker Hub.
+
+2 - Comando para baixar imagem localmente sem criar um container: `docker pull debian:stable-slim`
+
+3 - docker pull debian:stable-slim
+
+4 - docker container run -it debian:stable-
+
+5 - cat /etc/*-release
+
+6 - exit
+
+7 - docker container ls -a
+
+8 - docker start fcb309465c92 
+
+9 - docker attach fcb309465c92 
+
+10 - cat /etc/debian_version
+
+11 - exit
+
+12 - docker rm -f fcb309465c92
