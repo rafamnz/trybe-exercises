@@ -1,0 +1,32 @@
+-> Mapeamento: Pasta / Pasta
+docker container run -itd --name container-trybe -p 4545:80 -v $(pwd):/usr/local/apache2/htdocs httpd:2.4
+
+-> Mapeamento: Arquivo / Arquivo
+docker container run -itd --name container-trybe -p 4545:80 -v $(pwd)/missao_trybe.html:/usr/local/apache2/htdocs/index.html httpd:2.4 
+
+-> Verificar ID
+docker container ls -l
+docker container ls -a
+docker ps -l
+docker ps -a
+
+-> Obter Source no Mounts
+docker inspect f594b02032c5
+"Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/rafael/trybe-exercises/back-end/bloco-19-docker/dia-3-orquestrando-containers-com-docker-compose",
+                "Destination": "/usr/local/apache2/htdocs",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+
+docker stop f594b02032c5 
+
+docker rm f594b02032c5
+
+docker images
+
+docker rmi 444f7df01ce9
