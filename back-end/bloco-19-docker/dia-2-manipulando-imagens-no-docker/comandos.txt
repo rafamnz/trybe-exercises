@@ -1,0 +1,9 @@
+    docker image build ./ -t cowsay
+
+    docker container run cowsay
+
+    docker container run cowsay Meu nome é vaca
+
+    docker container run -l
+
+    docker container run cowsay -f dragon-and-cow "BOLA DE FOGO"
