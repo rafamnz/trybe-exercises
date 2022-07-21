@@ -1,0 +1,1 @@
+Instalações do MySql, Workbench e interações iniciais para entender um pouco melhor como funciona a ferramenta, além de conhecer alguns comandos relacionados a bancos de dados e suas respectivas tabelas.
