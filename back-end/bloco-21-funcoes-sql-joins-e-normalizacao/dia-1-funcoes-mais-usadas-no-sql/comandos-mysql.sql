@@ -32,13 +32,13 @@ ORDER BY sum_salary DESC;
 
 SELECT job_id, COUNT(*) AS quantity, SUM(salary) AS sum_salary 
 FROM hr.employees
-WHERE job_id = 'IT_PROG'
-GROUP BY job_id;
+GROUP BY job_id
+HAVING job_id = 'IT_PROG';
 
 SELECT job_id, COUNT(*) AS quantity, ROUND(AVG(salary)) AS avg_salary 
 FROM hr.employees
-WHERE job_id <> 'IT_PROG'
 GROUP BY job_id
+HAVING job_id <> 'IT_PROG'
 ORDER BY avg_salary DESC;
 
 SELECT department_id, COUNT(*) AS quantity, ROUND(AVG(salary), 2) AS avg_salary
